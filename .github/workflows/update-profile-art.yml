@@ -38,12 +38,6 @@ jobs:
       - name: Render SVGs
         working-directory: scripts
         run: python render_all.py
-      - name: Generate contribution snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            contrib-snake.svg?palette=github-dark&color_snake=#58d5e8
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh profile art [skip ci]"

@@ -8,7 +8,7 @@
 
 <table>
   <tr>
-    <td valign="top"><img src="https://github.com/Moazzam-Siddiqui.png" width="370" alt="Moazzam Ahmad Siddiqui profile photo" /></td>
+    <td valign="top"><img src="./ascii-portrait.svg" width="370" alt="ASCII portrait of Moazzam Ahmad Siddiqui" /></td>
     <td valign="top"><img src="./info-card.svg" width="490" alt="neofetch-style card: role, stack, live GitHub stats" /></td>
   </tr>
 </table>
@@ -33,11 +33,6 @@
 
 <h3><code>moazzam@github ~ $ ./contributions.sh</code></h3>
 <img src="./contrib-heatmap.svg" width="860" alt="Contribution heatmap for the last year" />
-
-<br><br>
-
-<h3><code>moazzam@github ~ $ ./snake --eat-commits</code></h3>
-<img src="./contrib-snake.svg" width="860" alt="Snake eating the contribution graph" />
 
 <br><br>
 
