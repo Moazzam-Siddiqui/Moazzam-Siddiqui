@@ -5,15 +5,17 @@
   "followers": 7,
   "stars": 35,
   "languages": {
-    "JavaScript": 59245182,
+    "JavaScript": 65245014,
     "Jupyter Notebook": 1587666,
+    "Python": 575865,
     "Java": 456447,
-    "Python": 419905,
     "TypeScript": 250020,
-    "HTML": 111160,
+    "HTML": 189087,
     "Dart": 78370,
+    "C": 14630,
     "Dockerfile": 10436,
-    "CSS": 10177,
+    "CSS": 10265,
+    "Batchfile": 433,
     "Shell": 283
   }
 }
