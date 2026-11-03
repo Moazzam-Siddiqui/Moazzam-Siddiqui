@@ -1,0 +1,44 @@
+name: Daily repository health audit
+
+on:
+  schedule:
+    - cron: "43 7 * * *" # daily at 13:13 IST; audit order is randomized per UTC day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-repository-health-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out controller
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run read-only audit across a random daily sample
+        env:
+          REPO_AUDIT_TOKEN: ${{ secrets.REPO_AUDIT_TOKEN }}
+          GITHUB_ACTOR: ${{ github.repository_owner }}
+        run: python scripts/repo_audit.py
+
+      - name: Commit the dated audit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/*.json
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+          else
+            git commit -m "chore: add daily repository health report"
+            git push
+          fi
