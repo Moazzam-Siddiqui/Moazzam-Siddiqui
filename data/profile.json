@@ -7,7 +7,7 @@
   "languages": {
     "JavaScript": 65245014,
     "Jupyter Notebook": 1587666,
-    "Python": 663540,
+    "Python": 667623,
     "Java": 456447,
     "TypeScript": 250020,
     "HTML": 189087,
@@ -15,7 +15,8 @@
     "C": 14630,
     "Dockerfile": 10706,
     "CSS": 10265,
-    "Batchfile": 433,
+    "PowerShell": 887,
+    "Batchfile": 751,
     "Shell": 283
   }
 }
