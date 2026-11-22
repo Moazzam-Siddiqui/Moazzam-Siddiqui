@@ -2,41 +2,6 @@
   "username": "Moazzam-Siddiqui",
   "days": [
     {
-      "date": "2025-11-16",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-17",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-18",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-19",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-20",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-21",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-22",
-      "level": 0,
-      "count": 0
-    },
-    {
       "date": "2025-11-23",
       "level": 1,
       "count": 2
@@ -1853,19 +1818,24 @@
     },
     {
       "date": "2026-11-21",
+      "level": 1,
+      "count": 1
+    },
+    {
+      "date": "2026-11-22",
       "level": 0,
       "count": 0
     }
   ],
   "stats": {
-    "total": 482,
-    "current_streak": 42,
-    "longest_streak": 42,
+    "total": 483,
+    "current_streak": 43,
+    "longest_streak": 43,
     "best_day": {
       "date": "2026-11-07",
       "count": 85
     },
-    "active_days": 91,
+    "active_days": 92,
     "busiest_weekday": "Saturday",
     "monthly": {
       "2025-11": 2,
@@ -1880,11 +1850,11 @@
       "2026-08": 68,
       "2026-09": 30,
       "2026-10": 30,
-      "2026-11": 237
+      "2026-11": 238
     },
     "range": [
-      "2025-11-16",
-      "2026-11-21"
+      "2025-11-23",
+      "2026-11-22"
     ]
   }
 }
